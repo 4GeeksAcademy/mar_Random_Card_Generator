@@ -1,1 +1,5 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+.characterImage {
+  position: absolute;
+  z-index: -1;
+}
