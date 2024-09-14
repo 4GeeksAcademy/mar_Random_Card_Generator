@@ -23,21 +23,19 @@ window.onload = function() {
   }
   let cardContainer = document.querySelector(".cardContainer");
   let imageList = [
-    "src/Blonnopie_1.png",
-    "src/Blonnopie_2.png",
+    "src/Blonnopie_1.svg",
+    "src/Blonnopie_2.svg",
     "src/Blonnopie_3.png",
-    "src/Blonnopie_4.png",
-    "src/Blonnopie_5.png",
-    "src/Blonnopie_6.png",
-    "src/Blonnopie_7.png",
-    "src/Blonnopie_8.png",
-    "src/Blonnopie_9.png",
-    "src/Blonnopie_10.png",
-    "src/Blonnopie_11.png",
-    "src/Blonnopie_12.png",
-    "src/Blonnopie_13.png",
-    "src/Blonnopie_14.png",
-    "src/Blonnopie_15.png"
+    "src/Blonnopie_4.svg",
+    "src/Blonnopie_5.svg",
+    "src/Blonnopie_6.svg",
+    "src/Blonnopie_7.svg",
+    "src/Blonnopie_8.svg",
+    "src/Blonnopie_9.svg",
+    "src/Blonnopie_10.svg",
+    "src/Blonnopie_11.svg",
+    "src/Blonnopie_12.svg",
+    "src/Blonnopie_13.svg"
   ];
   let randomImage = getRandomItem(imageList);
   cardContainer.style.backgroundImage = `url('${randomImage}')`;
