@@ -3,3 +3,8 @@
   position: absolute;
   z-index: -1;
 }
+body {
+  background-image: url("Blonnopies_background_1.png");
+  background-size: cover;
+  background-position: center;
+}

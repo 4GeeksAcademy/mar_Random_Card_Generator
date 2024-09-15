@@ -6,6 +6,16 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
+  let randomImage = GenerateRandomCard();
+  let cardContainer = document.querySelector(".cardContainer");
+  cardContainer.style.backgroundImage = `url('${randomImage}')`;
+
+  cardContainer.addEventListener("click", () => {
+    randomImage = GenerateRandomCard();
+    cardContainer.style.backgroundImage = `url('${randomImage}')`;
+  });
+};
+function GenerateRandomCard() {
   let valueList = ["A", 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"];
   let iconList = ["♦", "♥", "♠", "♣"];
   function getRandomItem(array) {
@@ -21,7 +31,6 @@ window.onload = function() {
     iconsDiv.forEach(value => (value.style.color = "red"));
     valueDiv.style.color = "red";
   }
-  let cardContainer = document.querySelector(".cardContainer");
   let imageList = [
     "src/Blonnopie_1.svg",
     "src/Blonnopie_2.svg",
@@ -38,5 +47,5 @@ window.onload = function() {
     "src/Blonnopie_13.svg"
   ];
   let randomImage = getRandomItem(imageList);
-  cardContainer.style.backgroundImage = `url('${randomImage}')`;
-};
+  return randomImage;
+}
