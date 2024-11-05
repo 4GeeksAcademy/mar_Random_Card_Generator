@@ -30,6 +30,9 @@ function GenerateRandomCard() {
   if (randomIcon == "♦" || randomIcon == "♥") {
     iconsDiv.forEach(value => (value.style.color = "red"));
     valueDiv.style.color = "red";
+  } else {
+    iconsDiv.forEach(value => (value.style.color = "black"));
+    valueDiv.style.color = "black";
   }
   let imageList = [
     "src/Blonnopie_1.svg",
